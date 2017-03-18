@@ -11,11 +11,10 @@ CRON job to scrape data usage from Wave Broadband at the end of each day
 * [Git](https://git-scm.com/)
 
 ### Up and Running
-* Clone the repository onto your computer somewhere using:  
-`git clone https://github.com/rcasto/wave-data-usage`
-* `cd` to the cloned repository and run the following command at it's root:  
-`npm install`  
-This will install the necessary dependencies
+* Clone the repository onto your computer somewhere using:
+  * `git clone https://github.com/rcasto/wave-data-usage`
+* `cd` to the cloned repository and run the following command at it's root to install the necessary dependencies:
+  * `npm install`
 * Adjust the config.json however you want, at the bare minimum adjust the **username** and **password** fields with your login credentials:  
 ```json
 {
@@ -28,5 +27,5 @@ This will install the necessary dependencies
 ```
 **Note**: You can find more details on the cronTab format used at the [node-cron github page](https://github.com/merencia/node-cron) 
 * Once you have the made the changes to config.json get running with the command:
-`npm start`
+  * `npm start`
 * Now relax, you are now monitoring and saving your data usage
