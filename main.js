@@ -33,7 +33,7 @@ function getAndSaveDataUsage(path = `${config.dataStore}/${config.dataFilePrefix
     return getDataUsage()
         .then((dataUsage) => saveDataUsage(path, dataUsage))
         .then(() => console.log(`Wrote data usage to ${path}`))
-        .catch((error) => console.error(error));
+        .catch((error) => console.error(`An error occurred: ${error}`));
 }
 
 function getDataUsage() {
@@ -56,9 +56,7 @@ function saveDataUsage(path, dataUsage) {
 }
 
 function pathTransform(path) {
-    console.log(`Incoming path: ${path}`);
     var pathParts = path.split('.');
-    console.log(`Parts of path ${pathParts[0]} | ${pathParts[1]}`);
     var dateString = (new Date()).toDateString().split(' ').join('-');
     return `${pathParts[0]}-${dateString}.${pathParts[1]}`;
 }
