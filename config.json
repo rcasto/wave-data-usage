@@ -1,4 +1,7 @@
 {
     "username": "<your-username>",
-    "password": "<your-password>"
+    "password": "<your-password>",
+    "dataStore": "data",
+    "dataFilePrefix": "usage-as-of",
+    "cronTab": "59 55 23 * * *"
 }
