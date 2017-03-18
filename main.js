@@ -41,7 +41,8 @@ function getDataUsage() {
         .then((responseObj) => {
             dataUseageRequestOptions.headers['Cookie'] = responseObj.response.headers['set-cookie'];
             return helpers.createSecureRequest(dataUseageRequestOptions);
-        });
+        })
+        .then((responseObj) => responseObj.data);
 }
 
 function saveDataUsage(path, dataUsage) {
