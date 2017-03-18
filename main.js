@@ -36,7 +36,7 @@ function getDataUsage() {
         })
         .then((responseObj) => {
             var dateString = (new Date()).toDateString().split(' ').join('-');
-            fs.writeFile(`data/usage-as-of-${dateString}.webp`, responseObj.data, 'binary', (err) => {
+            fs.writeFile(`./data/usage-as-of-${dateString}.webp`, responseObj.data, 'binary', (err) => {
                 if (err) {
                     throw err
                 }
