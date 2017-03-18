@@ -28,7 +28,6 @@ function makeRequest(requestObject, options) {
 }
 
 function createRequest(options) {
-    // https.request({}, (res) => res.)
     return makeRequest(http, options);
 }
 
