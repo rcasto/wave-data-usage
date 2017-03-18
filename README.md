@@ -27,6 +27,6 @@ This will install the necessary dependencies
 }
 ```
 **Note**: You can find more details on the cronTab format used at the [node-cron github page](https://github.com/merencia/node-cron) 
-* Once you have the made the changes to config.json get running by running the command:
+* Once you have the made the changes to config.json get running with the command:
 `npm start`
 * Now relax, you are now monitoring and saving your data usage
