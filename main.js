@@ -4,23 +4,18 @@ var helpers = require('./helpers');
 var config = require('./config.json');
 
 var waveHostName = 'secure.wavecable.com'
-var waveIAMDataUsagePath = '/iam/usage/image';
-var waveIAMLoginPath = '/iam/iam/login';
-
-var loginFormData = `username=${config.username}&password=${config.password}`;
-
 var loginRequestOptions = {
     hostname: waveHostName,
-    path: waveIAMLoginPath,
+    path: '/iam/iam/login',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
     },
     method: 'POST',
-    data: loginFormData
+    data: `username=${config.username}&password=${config.password}`
 };
 var dataUseageRequestOptions = {
     hostname: waveHostName,
-    path: waveIAMDataUsagePath,
+    path: '/iam/usage/image',
     headers: {
         'Cookie': ''
     },
