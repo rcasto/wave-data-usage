@@ -1,4 +1,5 @@
 var http = require('http');
+var config = require('./config.json');
 
 var waveHostName = 'secure.wavecable.com'
 var waveDataUsageUrl = waveBaseUrl + '/iam/usage/data';
