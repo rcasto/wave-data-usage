@@ -49,4 +49,4 @@ function getDataUsage() {
 // Initially get data usage upon initialization (This will be overwritten with latest at the end of the day)
 getDataUsage();
 // CRON job to get data usage right before midnight each day
-cron.schedule(`59 59 23 * * *`, () => getDataUsage());
+cron.schedule(`59 55 23 * * *`, () => getDataUsage());
