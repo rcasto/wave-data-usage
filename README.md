@@ -20,9 +20,9 @@ CRON job to scrape data usage from Wave Broadband at the end of each day
 {
   "username": "<your-username>",
   "password": "<your-password>",
-  "dataStore": "<where-you-want-to-store-data> | Defaults to data",
-  "dataFilePrefix": "<prefix-you-want-prepended-to-data-files> | Defaults to usage-as-of",
-  "cronTab": "<cron-tab-you-desire> | Defaults to 59 55 23 * * *"
+  "dataStore": "<where-you-want-to-store-data> | Defaults to 'data'",
+  "dataFilePrefix": "<prefix-you-want-prepended-to-data-files> | Defaults to 'usage-as-of'",
+  "cronTab": "<cron-tab-you-desire> | Defaults to '59 55 23 * * *'"
 }
 ```
 **Note**: You can find more details on the cronTab format used at the [node-cron github page](https://github.com/merencia/node-cron) 
